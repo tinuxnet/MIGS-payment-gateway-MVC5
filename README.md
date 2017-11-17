@@ -49,7 +49,7 @@ You can do transactions against MIGS in test mode using the following test card 
 
 card number = 5123456789012346
 
-expiry date = 0517 (MMYY)
+expiry date = 0521 (MMYY)
 
 csc/cvv = 100
 
@@ -58,7 +58,7 @@ csc/cvv = 100
 
 card number = 4987654321098769
 
-expiry date = 0517 (MMYY)
+expiry date = 0521 (MMYY)
 
 csc/cvv = 100
 
@@ -75,12 +75,15 @@ csc/cvv = 100
 
 .91 - Error communicating with Bank (Response Code 6)
 
+## Testing based on cent value
 
 **So to test an approved Mastercard you would enter details as below:**
 
 card number = 5123456789012346
 
-expiry date = 0517 (MMYY)
+expiry date = 0521 (MMYY)
+
+csc/cvv = 100
 
 purchase amount = $1.00
 
@@ -89,9 +92,27 @@ purchase amount = $1.00
 
 card number = 5123456789012346
 
-expiry date = 0517 (MMYY)
+expiry date = 0521 (MMYY)
+
+csc/cvv = 100
 
 purchase amount = $1.51
+
+## Testing based on card number
+
+**Visa – approved**
+card number = 5555555555554444
+
+expiry date = 0521 (MMYY)
+
+csc/cvv = 100
+
+**Mastercard – insufficient funds**
+card number = 5105105105105100
+
+expiry date = 0521 (MMYY) (or a future date)
+
+csc/csv: 100
 
 ### Credits:
 
